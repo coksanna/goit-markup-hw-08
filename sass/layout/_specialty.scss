@@ -1,0 +1,32 @@
+@media screen and (max-width: 1199px) {
+    .specialty {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .specialty {
+        padding-top: 47px;
+    }
+    .specialty__menu {
+        display: flex;
+    }
+    .specialty__item {
+        position: relative;
+    
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    .specialty__overlay {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        @include font(700, 14px, 16px, 0.03em);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}

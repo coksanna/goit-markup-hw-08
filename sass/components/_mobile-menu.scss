@@ -1,0 +1,98 @@
+@media screen and (max-width:768px) {
+    .mobile-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        max-height: 796px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: var(--main-background-color);
+        // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 500ms linear,  visibility 500ms linear;
+    }
+    .mobile-menu__container {
+        position: relative;
+        padding-left: 40px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .mobile-menu__close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0; 
+        cursor: pointer;       
+    } 
+    .mobile-menu__close-icon {
+        transition: fill var(--transition-dur-and-func);
+    
+        .mobile-menu__close-btn:hover &,
+        .mobile-menu__close-btn:focus & {
+            fill: var(--accent-color);
+        }
+    }
+    .mobile-menu__nav {
+        @include font(500, 40px, 47px, 00.02em);
+        margin-bottom: 306px;
+    }
+    .mobile-menu__link {
+        display: block;
+        margin-bottom: 32px;
+        color: var(--title-color);
+    }
+    .mobile-menu__link_current {
+        color: var(--accent-color);
+    }
+    .mobile-menu__contact {
+        margin-bottom: 64px;
+    }
+    .contact__tel-link {
+        display: block;
+        @include font(500, 34px, 40px, 0.02em);
+        color: var(--accent-color);
+        margin-bottom: 32px;
+    }
+    .contact__mail-link {
+        display: block;
+        @include font(500, 24px, 28px, 0.02em);
+        color: var(--primary-text-color);
+    }
+    .mobile-menu__social-link-list {
+        display: flex;
+        gap: 10px;       
+    }
+    .mobile-menu__social-link-item {
+        @include font(500, 18px, 22px, 0.02em);
+        color: var(--accent-color);
+
+        &:not(:last-child)::after {
+            content: '';
+            width: 22px;
+            height: 0;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            margin-left: 10px;
+        }
+    }
+    
+}
+    
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
