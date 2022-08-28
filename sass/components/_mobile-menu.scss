@@ -65,6 +65,7 @@
     }
     .mobile-menu__contact {
         margin-bottom: 64px;
+        width: 100%;
     }
     .contact__tel-link {
         display: block;
@@ -78,6 +79,7 @@
         color: var(--primary-text-color);
     }
     .mobile-menu__social-link-list {
+        width: 100%;
         display: flex;
         gap: 10px;       
     }
@@ -93,8 +95,7 @@
             transform: rotate(90deg);
             margin-left: 10px;
         }
-    }
-    
+    }      
 }  
 
 @media screen and (min-width: 768px) {
