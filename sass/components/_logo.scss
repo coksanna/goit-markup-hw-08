@@ -2,6 +2,9 @@
     font-family: var(--secondary-font);
     @include font(700, 26px, 31px, 0.03em);   
 }
+.page-header__logo {
+    color: var(--title-color);
+} 
 .logo__accent {
     color: var(--accent-color);
 } 

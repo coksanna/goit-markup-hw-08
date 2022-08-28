@@ -16,6 +16,7 @@
 .feature__item {
     display: block;
     width: 100%; 
+    margin-bottom: 30px;
 }
 .feature__img {
     display: flex;
@@ -34,12 +35,16 @@
 @media screen and (min-width: 768px) {
     .feature__menu {
         display: flex;  
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
         gap: 30px;
+    }
+    .feature__suptitle {
+        text-align: start;
     }
     .feature__item {
         display: block;
         width: 354px; 
+        margin-bottom: 0px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -51,7 +56,7 @@
     }
     .feature__item {
         width: 270px;
-    }
+    }    
 }
 
 

@@ -135,6 +135,9 @@
         justify-content: space-around;
         align-items: baseline;
    }
+   .page-footer__social-list {
+    margin-bottom: 0px;
+}
 }
 @media screen and (min-width: 1200px) {
     .page-footer__container {
@@ -143,6 +146,7 @@
     }
     .page-footer__contacts {
         align-items: flex-start;
+        margin-bottom: 0px;
     }
     .menu-contact {
         align-items: flex-start;

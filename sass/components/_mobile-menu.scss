@@ -21,6 +21,10 @@
         transition: opacity 500ms linear,  visibility 500ms linear;
     }
     .mobile-menu__container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
         position: relative;
         padding-left: 40px;
         padding-top: 48px;
@@ -43,10 +47,13 @@
         .mobile-menu__close-btn:focus & {
             fill: var(--accent-color);
         }
-    }
+    }   
     .mobile-menu__nav {
-        @include font(500, 40px, 47px, 00.02em);
-        margin-bottom: 306px;
+        @include font(500, 40px, 47px, 00.02em);        
+    }
+    .mobile-menu__list {
+        display: flex;
+        flex-direction: column;
     }
     .mobile-menu__link {
         display: block;
@@ -88,8 +95,7 @@
         }
     }
     
-}
-    
+}  
 
 @media screen and (min-width: 768px) {
     .mobile-menu {

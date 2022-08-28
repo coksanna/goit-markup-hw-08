@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     row-gap: 15px;
     column-gap: 8px;
 }
@@ -87,17 +87,17 @@
     .project__filter-wrapper {
         max-width: 100%;
         justify-content: center;
+        margin-bottom: 30px;
     }
     .project__menu {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;        
     }
 }
-// @media screen and (min-width: 1200px) {
-//     .project__item {
-//         flex-basis: calc((100% - 60px)/3); 
-//     }
-// }
+@media screen and (min-width: 1200px) {
+    .project__filter-wrapper {
+        margin-bottom: 50px;
+    }
+}
 
